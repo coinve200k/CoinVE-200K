@@ -1,0 +1,1 @@
+from .wan_video_mllm import WanVideoPipeline

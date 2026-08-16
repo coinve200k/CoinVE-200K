@@ -1,0 +1,53 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+env/
+
+# Testing / coverage
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# IDE / editor
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Inference / training outputs (per-run artifacts)
+outputs/
+ckpt/
+runs/
+wandb/
+
+# Dev scripts (internal only)
+CoinVE-Edit/dev/
+
+# Local data & checkpoints (large binaries, not for git)
+*.safetensors
+*.pt
+*.pth
+*.ckpt
+*.bin
+
+# Cache
+.cache/
+*.pkl
