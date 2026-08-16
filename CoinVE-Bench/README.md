@@ -2,7 +2,7 @@
 
 <div align="center">
 
-  <a href="https://huggingface.co/datasets/FireCRT/CoinVE-Bench"><img src="https://img.shields.io/static/v1?label=CoinVE-Bench&message=HuggingFace&color=yellow"></a> &ensp;
+  <a href="https://huggingface.co/datasets/FireCRT/CoinVE-Bench"><img src="https://img.shields.io/static/v1?label=%F0%9F%93%88%20CoinVE-Bench&message=HuggingFace&color=yellow"></a> &ensp;
 
 </div>
 

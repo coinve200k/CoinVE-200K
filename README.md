@@ -16,10 +16,11 @@ Smart Creation Platform Department, Online Video BU, Tencent
 
 <div align="center">
   <a href="https://coinve.github.io/"><img src="https://img.shields.io/static/v1?label=Project%20Page&message=Web&color=green"></a> &ensp;
-  <a href="https://arxiv.org/abs/xxxx.xxxxx"><img src="https://img.shields.io/static/v1?label=Tech%20Report&message=Arxiv&color=red"></a> &ensp;
-  <a href="https://huggingface.co/datasets/FireCRT/CoinVE-200K"><img src="https://img.shields.io/static/v1?label=CoinVE-200K%20Dataset&message=HuggingFace&color=yellow"></a> &ensp;
-  <a href="https://huggingface.co/FireCRT/CoinVE-Edit"><img src="https://img.shields.io/static/v1?label=CoinVE-Edit%20Model&message=HuggingFace&color=yellow"></a> &ensp;
-  <a href="https://huggingface.co/datasets/FireCRT/CoinVE-Bench"><img src="https://img.shields.io/static/v1?label=CoinVE-Bench&message=HuggingFace&color=yellow"></a> &ensp;
+  <a href="https://arxiv.org/abs/xxxx.xxxxx"><img src="https://img.shields.io/static/v1?label=Tech%20Report&message=Arxiv&color=red"></a>
+  <br>
+  <a href="https://huggingface.co/datasets/FireCRT/CoinVE-200K"><img src="https://img.shields.io/static/v1?label=%F0%9F%93%8A%20CoinVE-200K%20Dataset&message=HuggingFace&color=yellow"></a> &ensp;
+  <a href="https://huggingface.co/FireCRT/CoinVE-Edit"><img src="https://img.shields.io/static/v1?label=%F0%9F%A4%96%20CoinVE-Edit%20Model&message=HuggingFace&color=yellow"></a> &ensp;
+  <a href="https://huggingface.co/datasets/FireCRT/CoinVE-Bench"><img src="https://img.shields.io/static/v1?label=%F0%9F%93%88%20CoinVE-Bench&message=HuggingFace&color=yellow"></a>
 </div>
 
 ---
@@ -128,7 +129,7 @@ Each line is a JSON object representing one editing sample:
 ```json
 {
   "source_video_path": "src_videos/src_video_067/UWPBxW-hVEY_3_28to136.mp4",
-  "edited_video_path": "tgt_videos/tgt_video_000/UWPBxW-hVEY_3_28to136_86c7745f.mp4",
+  "edited_video_path": "tgt_videos/tgt_video_039/UWPBxW-hVEY_3_28to136_86c7745f.mp4",
   "instruction": [
     "Replace the white styrofoam takeout container with a brown cardboard clamshell burger box.",
     "Add a large silver metal fork resting on top of the french fries in the right side of the container.",
@@ -203,7 +204,7 @@ After extraction the directory layout matches the relative paths in `metadata_co
 ```text
 CoinVE-200K/
 ├── src_videos/src_video_067/UWPBxW-hVEY_3_28to136.mp4
-├── tgt_videos/tgt_video_040/UWPBxW-hVEY_3_28to136_86c7745f.mp4
+├── tgt_videos/tgt_video_039/UWPBxW-hVEY_3_28to136_86c7745f.mp4
 ├── instruction_masks/instruction_masks_003/UWPBxW-hVEY_3_28to136_86c7745f/instr_mask_01.mp4
 ├── combined_masks/combined_masks_004/UWPBxW-hVEY_3_28to136_86c7745f_combined_mask.mp4
 └── metadata_coinve200k.jsonl
