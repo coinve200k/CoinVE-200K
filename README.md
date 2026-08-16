@@ -7,7 +7,8 @@
 
 <div align="center">
 
-Fuchen Long, Cong Wang, Zitao Gao, Wenhao Zhong, Yu Cheng, Xiaolu Hou, Yan Li, Xiao Cao, Xinlong Sun, Xi Chen, Yu Liu
+Fuchen Long, Cong Wang, Zitao Gao, Wenhao Zhong, Yu Cheng, Xiaolu Hou<br>
+Yan Li, Xiao Cao, Xinlong Sun, Xi Chen, Yu Liu
 
 Smart Creation Platform Department, Online Video BU, Tencent
 
@@ -16,10 +17,9 @@ Smart Creation Platform Department, Online Video BU, Tencent
 <div align="center">
   <a href="https://coinve.github.io/"><img src="https://img.shields.io/static/v1?label=Project%20Page&message=Web&color=green"></a> &ensp;
   <a href="https://arxiv.org/abs/xxxx.xxxxx"><img src="https://img.shields.io/static/v1?label=Tech%20Report&message=Arxiv&color=red"></a> &ensp;
-
-  <a href="https://huggingface.co/datasets/FireCRT/CoinVE-200K"><img src="https://img.shields.io/static/v1?label=📊%20CoinVE-200K%20Dataset&message=HuggingFace&color=yellow"></a> &ensp;
-  <a href="https://huggingface.co/FireCRT/CoinVE-Edit"><img src="https://img.shields.io/static/v1?label=🤖%20CoinVE-Edit%20Model&message=HuggingFace&color=yellow"></a> &ensp;
-  <a href="https://huggingface.co/datasets/FireCRT/CoinVE-Bench"><img src="https://img.shields.io/static/v1?label=📈%20CoinVE-Bench&message=HuggingFace&color=yellow"></a> &ensp;
+  <a href="https://huggingface.co/datasets/FireCRT/CoinVE-200K"><img src="https://img.shields.io/static/v1?label=CoinVE-200K%20Dataset&message=HuggingFace&color=yellow"></a> &ensp;
+  <a href="https://huggingface.co/FireCRT/CoinVE-Edit"><img src="https://img.shields.io/static/v1?label=CoinVE-Edit%20Model&message=HuggingFace&color=yellow"></a> &ensp;
+  <a href="https://huggingface.co/datasets/FireCRT/CoinVE-Bench"><img src="https://img.shields.io/static/v1?label=CoinVE-Bench&message=HuggingFace&color=yellow"></a> &ensp;
 </div>
 
 ---

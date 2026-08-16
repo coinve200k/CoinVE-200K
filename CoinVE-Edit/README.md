@@ -2,7 +2,7 @@
 
 <div align="center">
 
-  <a href="https://huggingface.co/FireCRT/CoinVE-Edit"><img src="https://img.shields.io/static/v1?label=🤖%20CoinVE-Edit%20Model&message=HuggingFace&color=yellow"></a> &ensp;
+  <a href="https://huggingface.co/FireCRT/CoinVE-Edit"><img src="https://img.shields.io/static/v1?label=CoinVE-Edit%20Model&message=HuggingFace&color=yellow"></a> &ensp;
 
 </div>
 
