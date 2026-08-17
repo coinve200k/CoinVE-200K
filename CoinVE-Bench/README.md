@@ -164,10 +164,36 @@ Written to `--out-dir` (default `results/<output-name>/`):
 
 ## 📈 Performance Comparisons
 
-| Model | Overall | Instruction | Temporal | Regional | Visual |
-|-------|---------|-------------|----------|----------|--------|
-| TBD | TBD | TBD | TBD | TBD | TBD |
-
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2" style="text-align:center;vertical-align:middle">Model</th>
+      <th colspan="3" style="text-align:center;border-left:1px solid #888">Editing Accuracy</th>
+      <th colspan="3" style="text-align:center;border-left:1px solid #888">Physical Naturalness</th>
+      <th style="text-align:center;border-left:1px solid #888">Semantic Preservation</th>
+    </tr>
+    <tr>
+      <th style="text-align:center;border-left:1px solid #888">SA</th>
+      <th style="text-align:center">SPA</th>
+      <th style="text-align:center">EP</th>
+      <th style="text-align:center;border-left:1px solid #888">AN</th>
+      <th style="text-align:center">SC</th>
+      <th style="text-align:center">MN</th>
+      <th style="text-align:center;border-left:1px solid #888">CP</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>Seedance 2.0</td><td style="border-left:1px solid #888">85.34</td><td>87.71</td><td>88.08</td><td style="border-left:1px solid #888"><b>93.19</b></td><td><b>95.84</b></td><td>92.87</td><td style="border-left:1px solid #888;text-align:center"><b>93.91</b></td></tr>
+    <tr><td style="border-bottom:1px solid #888">Kling O3</td><td style="border-left:1px solid #888;border-bottom:1px solid #888">86.91</td><td style="border-bottom:1px solid #888">80.93</td><td style="border-bottom:1px solid #888">89.06</td><td style="border-left:1px solid #888;border-bottom:1px solid #888">92.55</td><td style="border-bottom:1px solid #888">90.30</td><td style="border-bottom:1px solid #888">93.91</td><td style="border-left:1px solid #888;border-bottom:1px solid #888;text-align:center">84.51</td></tr>
+    <tr><td>VACE</td><td style="border-left:1px solid #888">3.98</td><td>17.15</td><td>6.50</td><td style="border-left:1px solid #888">26.69</td><td>13.82</td><td>15.21</td><td style="border-left:1px solid #888;text-align:center">87.83</td></tr>
+    <tr><td>Ditto</td><td style="border-left:1px solid #888">34.69</td><td>36.41</td><td>40.85</td><td style="border-left:1px solid #888">35.96</td><td>47.79</td><td>38.48</td><td style="border-left:1px solid #888;text-align:center">51.98</td></tr>
+    <tr><td>VINO</td><td style="border-left:1px solid #888">83.63</td><td>66.75</td><td>89.06</td><td style="border-left:1px solid #888">78.09</td><td>82.34</td><td>85.91</td><td style="border-left:1px solid #888;text-align:center">61.70</td></tr>
+    <tr><td>OmniWeaving</td><td style="border-left:1px solid #888">59.67</td><td>55.94</td><td>61.11</td><td style="border-left:1px solid #888">54.49</td><td>66.03</td><td>65.10</td><td style="border-left:1px solid #888;text-align:center">75.09</td></tr>
+    <tr><td>KiWiEdit</td><td style="border-left:1px solid #888">76.50</td><td>69.92</td><td>80.28</td><td style="border-left:1px solid #888">78.37</td><td>78.50</td><td>80.76</td><td style="border-left:1px solid #888;text-align:center">70.31</td></tr>
+    <tr><td>SAMA</td><td style="border-left:1px solid #888">75.58</td><td>73.35</td><td>79.63</td><td style="border-left:1px solid #888">83.43</td><td>83.88</td><td>88.14</td><td style="border-left:1px solid #888;text-align:center">90.08</td></tr>
+    <tr><td><b>CoinVE-Edit</b></td><td style="border-left:1px solid #888"><b>87.97</b></td><td><b>89.45</b></td><td><b>89.60</b></td><td style="border-left:1px solid #888">91.85</td><td>91.17</td><td><b>95.30</b></td><td style="border-left:1px solid #888;text-align:center">90.83</td></tr>
+  </tbody>
+</table>
 
 
 
