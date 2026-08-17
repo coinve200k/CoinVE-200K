@@ -168,9 +168,9 @@ Written to `--out-dir` (default `results/<output-name>/`):
   <thead>
     <tr>
       <th rowspan="2" style="text-align:center;vertical-align:middle">Model</th>
-      <th colspan="3" style="text-align:center;border-left:1px solid #888">Editing Accuracy</th>
-      <th colspan="3" style="text-align:center;border-left:1px solid #888">Physical Naturalness</th>
-      <th style="text-align:center;border-left:1px solid #888">Semantic Preservation</th>
+      <th colspan="3" style="text-align:center;border-left:1px solid #888">Edit. Acc.</th>
+      <th colspan="3" style="text-align:center;border-left:1px solid #888">Phys. Natural.</th>
+      <th style="text-align:center;border-left:1px solid #888">Seman. Pres.</th>
     </tr>
     <tr>
       <th style="text-align:center;border-left:1px solid #888">SA</th>

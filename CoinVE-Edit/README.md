@@ -59,7 +59,7 @@ The CoinVE-Edit checkpoint (`.safetensors`) is available below:
 
 | Model | HuggingFace | Description |
 |-------|-------------|-------------|
-| `CoinVE-Edit` | [FireCRT/CoinVE-Edit](https://huggingface.co/FireCRT/CoinVE-Edit) | Full checkpoint trained on CoinVE-200K |
+| `CoinVE-Edit` | [FireCRT/CoinVE-Edit](https://huggingface.co/FireCRT/CoinVE-Edit) | Checkpoint trained on CoinVE-200K |
 
 The checkpoint contains the DiT LoRA weights, MLLM LoRA weights, learned image/video query embeddings, connector, VAE condition encoder, and the mask head weights.
 
@@ -167,7 +167,7 @@ Run multi-GPU inference over the CoinVE-Bench checklist JSON (361 cases).
 **Step 1.** Open `infer_coinve_bench.sh` and set these paths at the top of the script:
 
 ```bash
-EVAL_PATH="/path/to/coinve-bench-361-checklist.json"
+EVAL_PATH="/path/to/CoinVE-Bench/checklist_json/coinve-bench-361-checklist.json"
 DATA_ROOT="/path/to/CoinVE-Bench"               # root dir for resolving src_videos/xxx.mp4
 COMPOSITE_CKPT="/path/to/step-XXXX.safetensors"
 LOCAL_MODEL_PATH="/path/to/base_models"          # root dir containing Wan-AI/Wan2.1-T2V-14B/
