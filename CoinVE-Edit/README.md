@@ -169,7 +169,7 @@ Run multi-GPU inference over the CoinVE-Bench checklist JSON (361 cases).
 ```bash
 EVAL_PATH="/path/to/CoinVE-Bench/checklist_json/coinve-bench-361-checklist.json"
 DATA_ROOT="/path/to/CoinVE-Bench"               # root dir for resolving src_videos/xxx.mp4
-COMPOSITE_CKPT="/path/to/step-XXXX.safetensors"
+COMPOSITE_CKPT="/path/to/FireCRT/CoinVE-Edit/coinve_edit_composite_vllm256_dit128.safetensors"
 LOCAL_MODEL_PATH="/path/to/base_models"          # root dir containing Wan-AI/Wan2.1-T2V-14B/
 MLLM_MODEL="/path/to/Qwen3-VL-8B-Instruct"       # Qwen3-VL-8B-Instruct checkpoint dir
 ```
