@@ -27,10 +27,9 @@ Smart Creation Platform Department, Online Video BU, Tencent
 
 ## 🚀 News
 
-- **[2026.0x.xx]** Release CoinVE-200K dataset and CoinVE-Bench benchmark on HuggingFace.
-- **[2026.0x.xx]** Upload our arXiv paper.
-- **[2026.0x.xx]** Project page is available.
-- **[2026.0x.xx]** Release CoinVE-Edit model weights and inference code.
+- **[2026.08.18]** Release CoinVE-200K dataset and CoinVE-Bench benchmark on HuggingFace.
+- **[2026.08.18]** Release CoinVE-Edit model weights on HuggingFace.
+- **[2026.08.18]** Project page is available.
 
 
 ## ✨ Highlights
@@ -66,7 +65,7 @@ Instruction-guided video editing has witnessed rapid progress recently, driven b
 | Total editing samples | 200,916 |
 | Total video files | ~1.18M |
 | Total size | ~2.6 TB |
-| Instructions per sample | 2–5 (avg. 2.55) |
+| Instructions per sample | 2~5 (avg. 2.55) |
 
 
 
