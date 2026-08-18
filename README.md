@@ -66,9 +66,10 @@ Instruction-guided video editing has witnessed rapid progress recently, driven b
 |--------|-------|
 | Video source | Subset of [OpenVid-1M](https://github.com/NJU-PCALAB/OpenVid-1M) (i.e., [OpenVidHD](https://huggingface.co/datasets/nkp37/OpenVid-1M/tree/main/OpenVidHD)) |
 | Total editing samples | 200,916 |
+| Total video files | ~1.18M |
+| Total size | ~2.6 TB |
 | Video resolution | 1080P |
 | Max edited frames | 201 |
-| Total size | ~2.6 TB |
 | Instructions per sample | 2~5 (avg. 2.55) |
 
 
