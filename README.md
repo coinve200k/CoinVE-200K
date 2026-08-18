@@ -8,9 +8,12 @@
 <div align="center">
 
 Fuchen Long, Cong Wang, Zitao Gao, Wenhao Zhong, Yu Cheng, Xiaolu Hou<br>
-Yan Li, Xiao Cao, Xinlong Sun, Xi Chen, Yu Liu
+Yan Li, Xiao Cao, Xinlong Sun<sup>†</sup>, Xi Chen<sup>✉</sup>, Yu Liu
 
-Smart Creation Platform Department, Online Video BU, Tencent
+<sup>†</sup> Project Leader &ensp; <sup>✉</sup> Corresponding Author
+
+<b>Smart Creation Platform Department, Online Video BU, Tencent</b>
+
 
 </div>
 
