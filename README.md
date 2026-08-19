@@ -37,7 +37,7 @@ Yan Li, Xiao Cao, Xinlong Sun<sup>†</sup>, Xi Chen<sup>✉</sup>, Yu Liu
 
 ## ✨ Highlights
 
-- **[CoinVE-200K](https://huggingface.co/datasets/FireCRT/CoinVE-200K)**: Large-scale compositional instruction-guided video editing dataset with 200K+ samples, ~2.6 TB, featuring per-instruction and combined region masks.
+- **[CoinVE-200K](https://huggingface.co/datasets/FireCRT/CoinVE-200K)**: Large-scale compositional instruction-guided video editing dataset with 200K+ samples, ~2.8 TB, featuring per-instruction and combined region masks.
 - **[CoinVE-Edit](CoinVE-Edit/)**: Built on Wan2.1-T2V-14B and Qwen3-VL-8B, performs region-aware compositional instruction video editing.
 - **[CoinVE-Bench](CoinVE-Bench/)**: Provides 361 multi-instruction test cases with 4-dimensional evaluation metrics.
 
@@ -49,7 +49,7 @@ Instruction-guided video editing has witnessed rapid progress recently, driven b
 **Key features of CoinVE-200K:**
 - **Compositional Instructions**: Each sample contains 2–5 instructions covering different editing operations (Replace, Add, Remove, Background Change, etc.) on different regions (subject, object, background).
 - **Region-Aware Masks**: Per-instruction masks indicate the spatial region of each edit, and a combined mask aggregates all edited regions for holistic supervision.
-- **Large Scale & High Quality**: 200K+ video-edit pairs with ~1.18M video files, totaling ~2.6 TB, sourced from diverse open-source video collections.
+- **Large Scale & High Quality**: 200K+ video-edit pairs with ~1.18M video files, totaling ~2.8 TB, sourced from diverse open-source video collections.
 - **Rich Annotations**: Each sample includes structured fields — instruction text, operation type, object type, and corresponding mask video paths.
 
 <div align="center">
@@ -67,7 +67,7 @@ Instruction-guided video editing has witnessed rapid progress recently, driven b
 | Video source | Subset of [OpenVid-1M](https://github.com/NJU-PCALAB/OpenVid-1M) (i.e., [OpenVidHD](https://huggingface.co/datasets/nkp37/OpenVid-1M/tree/main/OpenVidHD)) |
 | Total editing samples | 200,916 |
 | Total video files | ~1.18M |
-| Total size | ~2.6 TB |
+| Total size | ~2.8 TB |
 | Video resolution | 1080P |
 | Max edited frames | 201 |
 | Instructions per sample | 2~5 (avg. 2.55) |
@@ -78,10 +78,10 @@ Instruction-guided video editing has witnessed rapid progress recently, driven b
 
 | Type | Directory | Shards | Files | Size |
 |------|-----------|--------|-------|------|
-| Source video | `src_videos/` | 74 | 194,450 | ~1.5 TB |
-| Edited video | `tgt_videos/` | 41 | 200,916 | ~813 GB |
-| Combined mask | `combined_masks/` | 8 | 223,773 | ~147 GB |
-| Instruction mask | `instruction_masks/` | 10 | 558,717 | ~176 GB |
+| Source video | `src_videos/` | 74 | 194,450 | ~1.56 TB |
+| Edited video | `tgt_videos/` | 41 | 200,916 | ~873 GB |
+| Combined mask | `combined_masks/` | 8 | 223,773 | ~158 GB |
+| Instruction mask | `instruction_masks/` | 10 | 558,717 | ~189 GB |
 
 
 ## 📁 Dataset Structure
