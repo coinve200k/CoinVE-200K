@@ -19,7 +19,7 @@ Yan Li, Xiao Cao, Xinlong Sun<sup>†</sup>, Xi Chen<sup>✉</sup>, Yu Liu
 
 <div align="center">
   <a href="https://coinve.github.io/"><img src="https://img.shields.io/static/v1?label=Project%20Page&message=Web&color=green"></a> &ensp;
-  <a href="https://arxiv.org/abs/xxxx.xxxxx"><img src="https://img.shields.io/static/v1?label=Tech%20Report&message=Arxiv&color=red"></a>
+  <a href="https://arxiv.org/abs/2608.17566"><img src="https://img.shields.io/static/v1?label=Tech%20Report&message=Arxiv&color=red"></a>
   <br>
   <a href="https://huggingface.co/datasets/FireCRT/CoinVE-200K"><img src="https://img.shields.io/static/v1?label=%F0%9F%93%8A%20CoinVE-200K%20Dataset&message=HuggingFace&color=yellow"></a> &ensp;
   <a href="https://huggingface.co/FireCRT/CoinVE-Edit"><img src="https://img.shields.io/static/v1?label=%F0%9F%A4%96%20CoinVE-Edit%20Model&message=HuggingFace&color=yellow"></a> &ensp;
@@ -264,7 +264,7 @@ If you find CoinVE-200K useful for your research, please cite our work:
 @article{coinve200k,
   title={CoinVE-200K: A Large-Scale High-Quality Dataset for Compositional Instruction-Guided Video Editing},
   author={Long, Fuchen and Wang, Cong and Gao, Zitao and Zhong, Wenhao and Cheng, Yu and Hou, Xiaolu and Li, Yan and Cao, Xiao and Sun, Xinlong and Chen, Xi and Liu, Yu},
-  journal={arXiv preprint arXiv:xxxx.xxxxx},
+  journal={arXiv preprint arXiv:2608.17566},
   year={2026}
 }
 ```
