@@ -18,7 +18,7 @@ Yan Li, Xiao Cao, Xinlong Sun<sup>†</sup>, Xi Chen<sup>✉</sup>, Yu Liu
 </div>
 
 <div align="center">
-  <a href="https://coinve.github.io/"><img src="https://img.shields.io/static/v1?label=Project%20Page&message=Web&color=green"></a> &ensp;
+  <a href="https://coinve200k.github.io/"><img src="https://img.shields.io/static/v1?label=Project%20Page&message=Web&color=green"></a> &ensp;
   <a href="https://arxiv.org/abs/2608.17566"><img src="https://img.shields.io/static/v1?label=Tech%20Report&message=Arxiv&color=red"></a>
   <br>
   <a href="https://huggingface.co/datasets/FireCRT/CoinVE-200K"><img src="https://img.shields.io/static/v1?label=%F0%9F%93%8A%20CoinVE-200K%20Dataset&message=HuggingFace&color=yellow"></a> &ensp;
