@@ -30,6 +30,7 @@ Yan Li, Xiao Cao, Xinlong Sun<sup>†</sup>, Xi Chen<sup>✉</sup>, Yu Liu
 
 ## 🚀 News
 
+- **[2026.08.20]** Release CoinVE-200K dataset on [ModelScope](https://modelscope.cn/datasets/SandFox/CoinVE-200K).
 - **[2026.08.18]** Release CoinVE-200K dataset and CoinVE-Bench benchmark on HuggingFace.
 - **[2026.08.18]** Release CoinVE-Edit model weights on HuggingFace.
 - **[2026.08.18]** Project page is available.
