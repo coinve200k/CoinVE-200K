@@ -219,3 +219,5 @@ For any questions, issues, or collaborations, please feel free to contact longfc
 ## 💖 Acknowledgement
 
 Our benchmark construction and evaluation protocol are inspired by [ReCo-Bench](https://huggingface.co/datasets/HiDream-ai/ReCo-Bench) and [OpenVE-Bench](https://huggingface.co/datasets/Lewandofski/OpenVE-Bench). Thanks to the contributors of all these remarkable projects!
+
+Particularlly, we would like to also express our special and sincere gratitude to **[CoVEBench](https://huggingface.co/datasets/NJU-LINK/CoVEBench)**, which has profoundly inspired our work. The insightful design philosophy, compositional editing formulation, and evaluation paradigm of CoVEBench served as a key inspiration for the construction of CoinVE-Bench.
