@@ -30,6 +30,7 @@ Yan Li, Xiao Cao, Xinlong Sun<sup>†</sup>, Xi Chen<sup>✉</sup>, Yu Liu
 
 ## 🚀 News
 
+- **[2026.09.10]** Add key-frame edits (376K source/edited key-frame images) to CoinVE-200K on [HuggingFace](https://huggingface.co/datasets/FireCRT/CoinVE-200K) and [ModelScope](https://modelscope.cn/datasets/SandFox/CoinVE-200K).
 - **[2026.08.20]** Release CoinVE-200K dataset on [ModelScope](https://modelscope.cn/datasets/SandFox/CoinVE-200K).
 - **[2026.08.18]** Release CoinVE-200K dataset and CoinVE-Bench benchmark on HuggingFace.
 - **[2026.08.18]** Release CoinVE-Edit model weights on HuggingFace.
@@ -38,7 +39,7 @@ Yan Li, Xiao Cao, Xinlong Sun<sup>†</sup>, Xi Chen<sup>✉</sup>, Yu Liu
 
 ## ✨ Highlights
 
-- **[CoinVE-200K](https://huggingface.co/datasets/FireCRT/CoinVE-200K)**: Large-scale compositional instruction-guided video editing dataset with 200K+ samples, ~2.8 TB, featuring per-instruction and combined region masks.
+- **[CoinVE-200K](https://huggingface.co/datasets/FireCRT/CoinVE-200K)**: Large-scale compositional instruction-guided video editing dataset with 200K+ samples, ~3.3 TB, featuring per-instruction and combined region masks.
 - **[CoinVE-Edit](CoinVE-Edit/)**: Built on Wan2.1-T2V-14B and Qwen3-VL-8B, performs region-aware compositional instruction video editing.
 - **[CoinVE-Bench](CoinVE-Bench/)**: Provides 361 multi-instruction test cases with 4-dimensional evaluation metrics.
 
@@ -50,7 +51,7 @@ Instruction-guided video editing has witnessed rapid progress recently, driven b
 **Key features of CoinVE-200K:**
 - **Compositional Instructions**: Each sample contains 2–5 instructions covering different editing operations (Replace, Add, Remove, Background Change, etc.) on different regions (subject, object, background).
 - **Region-Aware Masks**: Per-instruction masks indicate the spatial region of each edit, and a combined mask aggregates all edited regions for holistic supervision.
-- **Large Scale & High Quality**: 200K+ video-edit pairs with ~1.18M video files, totaling ~2.8 TB, sourced from diverse open-source video collections.
+- **Large Scale & High Quality**: 200K+ video-edit pairs with ~1.18M video files and 376K key-frame images, totaling ~3.3 TB, sourced from diverse open-source video collections.
 - **Rich Annotations**: Each sample includes structured fields — instruction text, operation type, object type, and corresponding mask video paths.
 
 <div align="center">
@@ -68,7 +69,8 @@ Instruction-guided video editing has witnessed rapid progress recently, driven b
 | Video source | Subset of [OpenVid-1M](https://github.com/NJU-PCALAB/OpenVid-1M) (i.e., [OpenVidHD](https://huggingface.co/datasets/nkp37/OpenVid-1M/tree/main/OpenVidHD)) |
 | Total editing samples | 200,916 |
 | Total video files | ~1.18M |
-| Total size | ~2.8 TB |
+| Total Key-frame files | 376,458 |
+| Total size | ~3.3 TB |
 | Video resolution | 1080P |
 | Max edited frames | 201 |
 | Instructions per sample | 2~5 (avg. 2.55) |
@@ -83,6 +85,7 @@ Instruction-guided video editing has witnessed rapid progress recently, driven b
 | Edited video | `tgt_videos/` | 41 | 200,916 | ~873 GB |
 | Combined mask | `combined_masks/` | 8 | 223,773 | ~158 GB |
 | Instruction mask | `instruction_masks/` | 10 | 558,717 | ~189 GB |
+| Key-frame edit | `key_frame_edits/` | 25 | 376,458 | ~477 GB |
 
 
 ## 📁 Dataset Structure
@@ -104,6 +107,9 @@ CoinVE-200K/
 ├── instruction_masks/
 │   ├── instruction_masks_000.tar
 │   └── ...
+├── key_frame_edits/
+│   ├── src_frames_000.tar
+│   └── ...
 └── metadata_coinve200k.jsonl
 ```
 
@@ -124,6 +130,16 @@ instruction_masks_003.tar
 │   │   ├── instr_mask_01.mp4
 │   │   ├── instr_mask_02.mp4
 │   │   └── instr_mask_03.mp4
+│   └── ...
+
+src_frames_011.tar
+├── src_frames_011/
+│   ├── UWPBxW-hVEY_3_28to136.png
+│   └── ...
+
+tgt_frames_011.tar
+├── tgt_frames_011/
+│   ├── UWPBxW-hVEY_3_28to136_86c7745f.png
 │   └── ...
 ```
 
@@ -147,7 +163,9 @@ Each line is a JSON object representing one editing sample:
     "instruction_masks/instruction_masks_003/UWPBxW-hVEY_3_28to136_86c7745f/instr_mask_02.mp4",
     "instruction_masks/instruction_masks_003/UWPBxW-hVEY_3_28to136_86c7745f/instr_mask_03.mp4"
   ],
-  "combined_mask_video_path": "combined_masks/combined_masks_004/UWPBxW-hVEY_3_28to136_86c7745f_combined_mask.mp4"
+  "combined_mask_video_path": "combined_masks/combined_masks_004/UWPBxW-hVEY_3_28to136_86c7745f_combined_mask.mp4",
+  "source_frame_path": "key_frame_edits/src_frames_011/UWPBxW-hVEY_3_28to136.png",
+  "edited_frame_path": "key_frame_edits/tgt_frames_011/UWPBxW-hVEY_3_28to136_86c7745f.png"
 }
 ```
 
@@ -202,6 +220,7 @@ for tar in src_videos/*.tar; do tar -xf "$tar" -C src_videos/; done
 for tar in tgt_videos/*.tar; do tar -xf "$tar" -C tgt_videos/; done
 for tar in combined_masks/*.tar; do tar -xf "$tar" -C combined_masks/; done
 for tar in instruction_masks/*.tar; do tar -xf "$tar" -C instruction_masks/; done
+for tar in key_frame_edits/*.tar; do tar -xf "$tar" -C key_frame_edits/; done
 ```
 
 After extraction the directory layout matches the relative paths in `metadata_coinve200k.jsonl`:
@@ -212,6 +231,8 @@ CoinVE-200K/
 ├── tgt_videos/tgt_video_039/UWPBxW-hVEY_3_28to136_86c7745f.mp4
 ├── instruction_masks/instruction_masks_003/UWPBxW-hVEY_3_28to136_86c7745f/instr_mask_01.mp4
 ├── combined_masks/combined_masks_004/UWPBxW-hVEY_3_28to136_86c7745f_combined_mask.mp4
+├── key_frame_edits/src_frames_011/UWPBxW-hVEY_3_28to136.png
+├── key_frame_edits/tgt_frames_011/UWPBxW-hVEY_3_28to136_86c7745f.png
 └── metadata_coinve200k.jsonl
 ```
 
